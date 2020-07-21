@@ -1,0 +1,31 @@
+h2{
+    text-align: center;
+}
+h3{
+    text-align: left;
+}
+h4{
+    text-align: center;
+    
+}
+h5{
+    text-align: center;
+    position: static;  
+}
+p{
+    text-align: center;
+}
+
+@media print{
+    body*{
+        visibility: hidden;
+    }
+    .print-container, .print-container *{
+        visibility: visible;
+    }
+    .print-container {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+}
